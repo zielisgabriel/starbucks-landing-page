@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks Website</title>
+</head>
+<body>
+    <section id="home" class="section1">
+        <header id="header">
+            <a href="">
+                <img src="images/logo.png" alt="Logo da Starbucks">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="#">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h1>Isso não é apenas um Café<br>Isso é <span>Starbucks</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni delectus labore tenetur minima. Laudantium odio, ipsam unde sit tempora ipsum explicabo harum a ad ea earum quae possimus nesciunt vitae!</p>
+                <a href="#"><button>Saiba mais</button></a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" class="starbucksCafe" alt="">
+            </div>
+            
+        </div> <!--content-->
+        <div class="banner-ball-conainer">
+            <div class="banner-ball"></div>
+        </div>
+        <div class="thumb">
+            <ul>
+                <li>
+                    <img src="images/thumb1.png" class="trocar" onclick="imgSlider('images/img1.png'); corCirculo('#017143')" alt="">
+                </li>
+                <li>
+                    <img src="images/thumb2.png" class="trocar" onclick="imgSlider('images/img2.png'); corCirculo('#eb7495')" alt="">
+                </li>
+                <li>
+                    <img src="images/thumb3.png" class="trocar" onclick="imgSlider('images/img3.png'); corCirculo('#d752b1')" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="cafe-de-fundo">
+            <img src="images/img1.png" alt="">
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="menu-text">
+            <h1>Menu:</h1>
+        </div>
+        <div class="cards-container">
+            <div class="cards">
+                <div class="card-content">
+                    <div class="imgCardBox">
+                        <img src="images/img1.png" alt="">
+                    </div>
+                    <div class="textCardBox">
+                        <h1>Verde</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste perferendis repellat, accusamus quia dolorum nobis nulla provident labore rerum quo ipsam alias sed pariatur quod impedit reiciendis quibusdam fugit?</p>
+                    </div>
+                    <div class="pedido-btn">
+                        <button>Faça seu pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-content">
+                    <div class="imgCardBox">
+                        <img src="images/img2.png" alt="">
+                    </div>
+                    <div class="textCardBox">
+                        <h1>Rosa</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste perferendis repellat, accusamus quia dolorum nobis nulla provident labore rerum quo ipsam alias sed pariatur quod impedit reiciendis quibusdam fugit?</p>
+                    </div>
+                    <div class="pedido-btn">
+                        <button>Faça seu pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-content">
+                    <div class="imgCardBox">
+                        <img src="images/img3.png" alt="">
+                    </div>
+                    <div class="textCardBox">
+                        <h1>Roxo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iste perferendis repellat, accusamus quia dolorum nobis nulla provident labore rerum quo ipsam alias sed pariatur quod impedit reiciendis quibusdam fugit?</p>
+                    </div>
+                    <div class="pedido-btn">
+                        <button>Faça seu pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
