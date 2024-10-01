@@ -10,6 +10,12 @@ function imgSlider(anything){
 function corCirculo(cor){
     const circulo = document.querySelector('.banner-ball')
     circulo.style.background = cor
+
+    const starbucksNome = document.querySelector('span')
+    starbucksNome.style.color = cor
+
+    const botaoSaibaMais = document.querySelector('#botaoSaibaMais')
+    botaoSaibaMais.style.background = cor
 }
 
 
