@@ -40,8 +40,7 @@ header{
 
 #header.rolagem{
     padding: 12px 38px;
-    background: #025533da;
-    backdrop-filter: blur(20px);
+    background: #04643c;
 }
 
 #header.rolagem ul li a{
@@ -71,7 +70,7 @@ header a img{
     max-width: 80px;
 }
 
-.content{
+.section1 .content{
     position: relative;
     display: flex;
     display: flex;
@@ -117,21 +116,27 @@ header a img{
 }
 
 .content .textBox a{
+    width: 180px;
+}
+
+.content .textBox a button{
     color: #fff;
+    outline: none;
+    border: none;
     background: #017143;
     display: flex;
-    max-width: 23%;
     justify-content: center;
-    padding: 12px 0;
+    padding: 12px 50px;
     border-radius: 30px;
     align-items: center;
     transition: .2s;
     font-weight: 500;
     outline: none;
     margin-top: 10px;
+    width: 100%;
 }
 
-.content .textBox a:active{
+.content .textBox a button:active{
     background: #015331;
 }
 
@@ -185,7 +190,361 @@ header a img{
 }
 
 .menu{
-    height: 80vh;
+    height: auto;
+    padding: 120px 0;
     background-color: #047e4b;
     box-shadow: 0 0 20px 10px rgba(0,0,0,0.09);
+}
+
+.cards-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 350px;
+    height: auto;
+    background-color: #0000002d;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    padding: 20px 25px;
+}
+
+.imgCardBox img{
+    width: 500px;
+    opacity: 0.50;
+    position: absolute;
+    z-index: 0;
+    left: 50px;
+}
+
+.textCardBox{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 30px rgba(0,0,0,0.2);
+    gap: 15px;
+}
+
+.textCardBox h1{
+    color: #deffe9;
+    font-size: 40px;
+}
+
+.textCardBox p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fffffffb;
+}
+
+.pedido-btn{
+    position: relative;
+    margin-top: 25px;
+    width: 75%;
+    transition: .3s;
+}
+
+.pedido-btn button{
+    background: #08be72;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    text-shadow: 0 0 10px rgba(0,0,0,0.09);
+    transition: .2s;
+}
+
+.pedido-btn:hover{
+    width: 90%;
+}
+
+.pedido-btn button:active{
+    background-color: #059257;
+}
+
+.menu-text{
+    font-size: 40px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cafe-de-fundo{
+    display: none;
+}
+
+
+/*Mobile*/
+.barMobile, .listMobile{
+    display: none;
+}
+
+.barMobile i{
+    color: #017143;
+}
+
+
+@media (max-width: 1225px){
+    .section1 .content{
+        padding: 0 100px;
+    }
+}
+
+
+@media (max-width: 1065px){
+    .section1 .content{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 965px){
+    .section1 .content{
+        padding: 0 25px;
+    }
+
+    .content .textBox h1{
+        font-size: 30px;
+    }
+
+    .content .textBox h1 span{
+        color: #017143;
+        font-size: calc(20px * 2.0);
+        font-weight: 900;
+    }
+
+    .content .textBox p{
+        font-size: 17px;
+    }
+
+    .imgBox{
+    }
+
+    .imgBox img{
+        width: 250px;
+    }   
+}
+
+
+@media (max-width: 2900px){
+    .section1 .content{
+        padding: 0 800px;
+    }
+}
+
+@media (max-width: 2700px){
+    .section1 .content{
+        padding: 0 700px;
+    }
+}
+
+@media (max-width: 2500px){
+    .section1 .content{
+        padding: 0 600px;
+    }
+}
+
+@media (max-width: 2300px){
+    .section1 .content{
+        padding: 0 500px;
+    }
+}
+
+@media (max-width: 2100px){
+    .section1 .content{
+        padding: 0 450px;
+    }
+}
+
+@media (max-width: 1900px){
+    .section1 .content{
+        padding: 0 400px;
+    }
+}
+
+@media (max-width: 1800px){
+    .section1 .content{
+        padding: 0 350px;
+    }
+}
+
+
+@media (max-width: 1590px){
+    .section1 .content{
+        padding: 0 250px;
+    }
+}
+
+@media (max-width: 1440px){
+    .section1 .content{
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 1240px){
+    .section1 .content{
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1025px){
+    .section1 .content{
+        padding: 0 40px;
+    }
+}
+
+
+@media (max-width: 810px){
+    .cards-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .thumb{
+        display: none;
+    }
+
+    .content .imgBox{
+        display: none;
+    }
+
+    .banner-ball{
+        display: none;
+    }
+
+    .textBox{
+        position: relative;
+        z-index: 100;
+    }
+
+    .textBox p{
+        width: 62%;
+    }
+
+    .cafe-de-fundo{
+        display: block;
+        position: absolute;
+        bottom: -200px;
+        right: -150px;
+        z-index: 0;
+        opacity: 0.9;
+    }
+
+    /*MOBILE*/
+    header ul{
+        display: none;
+    }
+
+    .barMobile{
+        display: block;
+        font-size: 25px;
+    }
+
+    #header.rolagem .barMobile{
+        color: #fff;
+    }
+
+    #header.rolagem .listMobile{
+        background: #04643c;
+        top: 105px;
+    }
+
+    #header.rolagem .listMobile li a{
+        color: #fff;
+    }
+
+    .listMobile-container .listMobile{
+        /*height: 185px;*/
+        height: 0px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        list-style: none;
+        right: 0;
+        padding-right: 50px;
+        gap: 25px;
+        overflow: hidden;
+        transition: .23s;
+        border-bottom-left-radius: 15px;
+    }
+
+    .listMobile-container .listMobile li a{
+        color: #161616;
+        font-weight: 500;
+        padding: 8px 10px;
+        margin-left: 10px;
+        border-radius: 20px;
+        transition: .2s;
+    }
+
+    .listMobile-container.listMobile li a:active{
+        background-color: #ffffff9f;
+    }
+
+    #barMobile{
+        
+    }
+
+    .listMobile.active{
+        height: 185px;
+    }
+}
+
+@media (max-width: 600px){
+    .cafe-de-fundo{
+        bottom: -390px;
+    }
+
+    .textBox p{
+        width: 100%;
+    }
+
+    .content .textBox button{
+        height: 55px;
+    }
+}
+
+@media (max-width: 520px){
+    .content .textBox h1{
+        font-size: 40px;
+    }
+
+    .content .textBox h1 span{
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 414px){
+    .content .textBox h1{
+        font-size: 40px;
+    }
+
+    .content .textBox h1 span{
+        font-size: 45px;
+    }
 }
